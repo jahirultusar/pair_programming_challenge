@@ -1,2 +1,4 @@
 class MusicTracker():
-    pass
+    
+    def __init__(self, empty_list):
+        self.list_of_tracks = empty_list
