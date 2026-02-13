@@ -6,3 +6,6 @@ class MusicTracker():
     def add_tracks(self, track):
         if track:
             self.list_of_tracks.append(track)
+    
+    def output_list_of_tracks(self):
+        return self.list_of_tracks

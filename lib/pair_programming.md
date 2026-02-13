@@ -17,3 +17,5 @@
     - Returns nothing
 
 - list_of_tracks
+    -No arguments
+    - returns the list of all tracks

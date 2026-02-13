@@ -19,3 +19,16 @@ def test_user_adds_1_track():
     track_list = MusicTracker([])
     track_list.add_tracks("Break free")
     assert track_list.list_of_tracks == ["Break free"]
+
+
+"""
+Takes the list of tracks
+returns the list of tracks to the user 
+"""
+
+def test_returns_list_of_tracks():
+    track_list = MusicTracker([])
+    track_list.add_tracks("Break free")
+    track_list.add_tracks("3005")
+    track_list.add_tracks("Stay")
+    assert track_list.list_of_tracks == ["Break free", "3005", "Stay"]
