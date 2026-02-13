@@ -1,3 +1,4 @@
+import pytest
 from lib.music_tracker import *
 
 """
@@ -32,3 +33,13 @@ def test_returns_list_of_tracks():
     track_list.add_tracks("3005")
     track_list.add_tracks("Stay")
     assert track_list.list_of_tracks == ["Break free", "3005", "Stay"]
+
+"""
+If user enters integer
+Return a typeError
+"""
+
+def test_user_enters_integer_error():
+    track_list = MusicTracker([])
+    with pytest.raises(TypeError, match="Track name should be a string only."):
+        track_list.add_tracks(6)
