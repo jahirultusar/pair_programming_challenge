@@ -6,6 +6,14 @@
 2. Design class interface
 - Class - "MusicTracker"
 - Methods:
+
 - Initializer
+    - Initialises empty list
+    - Returns nothing
+
 - add_tracks
+    - Take a track
+    - Add track to empty list
+    - Returns nothing
+
 - list_of_tracks
